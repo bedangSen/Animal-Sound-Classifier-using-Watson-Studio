@@ -9,12 +9,7 @@ This repo is based on the IBM Early Program - Animal Sound project. [Here.](http
 
 + [Getting Started](#getting-started)
 + [Gathering and Preparing Data](#gathering-and-preparing-data)
-+ [Configuring the Application](#configuring-the-application) 
-+ [Running VoiceSens locally](#running-locally)
-+ [Demo Screenshots](#demo)
-+ [Key Components](#built-with)
-+ [References (Further Reading)](#references)
-+ [Future Additions](#to-do)
++ [Build a Machine Learning Model](#build-a-machine-learning-model) 
 
 ## Getting Started
 
@@ -113,4 +108,28 @@ These instructions will get you a copy of the project up and running on your loc
    python ospconverter.py
    ```
    
+1. Review the generated file.
+   
+   <p align="center">
+    <img src="https://i.imgur.com/EVPvKqd.png" align="middle">
+   </p>
+   
+## Build a Machine Learning Model 
+   ### 1. Create a machine learning project
+   <p align="center">
+    <img src="https://i.imgur.com/WMwvB29.gifv" align="middle">
+   </p>
+   
+   1. Log in to your IBM Cloud account and create an instance of the Watson Studio service.  
+      1. Name your service instance. 
+      1. Choose a region.
+      1. Select the `lite` plan.
+      1. Click `Create`. 
+      
+   1. Launch Watson Studio by lcikcing on `Launch Tool`. 
+   
+   1. 
 1. 
+1.
+1. 
+1.
