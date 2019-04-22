@@ -183,10 +183,13 @@ These instructions will get you a copy of the project up and running on your loc
    1. Analyze the Performance, Area under roc curve, and Area under pr curve columns. Select the model with the best performance and highest scoring curve columns. Then, click `Save`.
    
       <p align="center">
-       <img src="" align="middle">
+       <img src="https://i.imgur.com/awaQ6Ma.gif" align="middle">
       </p>
 
    ### 3. Deploy the Machine Learning Model
+   <p align="center">
+             <img src="https://i.imgur.com/ozkCzZj.gif" align="middle">
+         </p>            
    
    1. Click `Deployments`.
    1. On the right side of the page, click `Add Deployment`.
