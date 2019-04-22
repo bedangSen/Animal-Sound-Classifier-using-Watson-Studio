@@ -111,7 +111,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Review the generated file.
    
    <p align="center">
-    <img src="https://i.imgur.com/EVPvKqd.png" align="middle">
+    <img src="https://i.imgur.com/WMwvB29.gif" align="middle">
    </p>
    
 ## Build a Machine Learning Model 
@@ -133,3 +133,5 @@ These instructions will get you a copy of the project up and running on your loc
 1.
 1. 
 1.
+
+[Imgur](https://i.imgur.com/WMwvB29.gifv)
