@@ -183,10 +183,13 @@ These instructions will get you a copy of the project up and running on your loc
    1. Analyze the Performance, Area under roc curve, and Area under pr curve columns. Select the model with the best performance and highest scoring curve columns. Then, click `Save`.
    
       <p align="center">
-       <img src="" align="middle">
+       <img src="https://i.imgur.com/awaQ6Ma.gif" align="middle">
       </p>
 
    ### 3. Deploy the Machine Learning Model
+   <p align="center">
+             <img src="https://i.imgur.com/ozkCzZj.gif" align="middle">
+         </p>            
    
    1. Click `Deployments`.
    1. On the right side of the page, click `Add Deployment`.
@@ -194,3 +197,38 @@ These instructions will get you a copy of the project up and running on your loc
    1. Wait for the model to deploy. The status will show DEPLOY_SUCCESS when it is complete. If it fails to deploy, try refreshing the browser after a few minutes. Alternatively, delete that deployment and follow these steps again.
    1. Click the name of the deployment.
       1. note the `deployment ID`.
+
+## Create predictions in a Node-RED applicaiton 
+   ### 1. Predict the animal sound
+   1. Log in to [IBM Cloud](https://ibm.biz/MLinSound).
+   
+   1. If you haven’t created an instance of Node-RED, create one:
+      <p align="center">
+       <img src="" align="middle">
+      </p>
+   
+      1. In IBM Cloud, click Catalog > Starter Kits > Node-RED Starter.
+      1. Enter an application name and domain.
+      
+      > The application name must be unique because it will be publicly addressable. Most likely the name catsdogs is already taken. The domain for this application does not need to match the domain that you used for Watson Studio.
+      
+      1. Click `Create`. It might take some time for your instance to be created and started.
+      <p align="center">
+       <img src="" align="middle">
+      </p>
+      
+      1. After your instance of Node-RED is running, click `Visit App URL`.
+      1. Optional: Secure your Node-RED instance with a user name and password.
+      1. Click `Next` and `Next` again to complete the setup. Then, click `Go to your Node-RED flow editor`.
+      
+   1. Log in in to your Node-RED instance by using the credentials that you previously specified.
+   
+   > Next, you will be importing a prebuilt flow into your Node-RED instance. This flow will allow you to upload a file and run it through the machine learning model that you created earlier.
+   
+   1. Open a new tab and go to the GitHub repositoryand select the `noderedflows` folder.
+
+   
+   ### 2. Deploy and test the signal processing 
+   
+   
+   ### 3. Run predictions against the audio files
