@@ -141,7 +141,7 @@ These instructions will get you a copy of the project up and running on your loc
          1. Click `Add` to add Cloud Object Storage for Watson Studio.
          1. You might need to go back to the previous step to associate the cloud object storage with your data science project.
          1. When you're done creating the project, click `Create`.
-   ### 1. Create a machine learning model
+   ### 2. Create a machine learning model
    
    1. Create a Watson Machine Learning Model
       <p align="center">
@@ -183,7 +183,14 @@ These instructions will get you a copy of the project up and running on your loc
    1. Analyze the Performance, Area under roc curve, and Area under pr curve columns. Select the model with the best performance and highest scoring curve columns. Then, click `Save`.
    
       <p align="center">
-       <img src="https://i.imgur.com/i1bR2fM.gif" align="middle">
+       <img src="" align="middle">
       </p>
 
-   ### 1. Deploy the Machine Learning Model
+   ### 3. Deploy the Machine Learning Model
+   
+   1. Click `Deployments`.
+   1. On the right side of the page, click `Add Deployment`.
+   1. Give the deployment a name (and optional description), select `Web service`, and then click `Save`.
+   1. Wait for the model to deploy. The status will show DEPLOY_SUCCESS when it is complete. If it fails to deploy, try refreshing the browser after a few minutes. Alternatively, delete that deployment and follow these steps again.
+   1. Click the name of the deployment.
+      1. note the `deployment ID`.
