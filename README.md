@@ -1,11 +1,14 @@
 # Animal-Sound-Classifier-using-Watson-Studio
-Build classification models using IBM Watson Studio to predict (identify) animal sounds. Learn how to best gather and prepare data, create and deploy models, deploy and test a signal processing application, create models with binary classifications, and display the predictions on a web page created using Node-RED. 
+Create a prediction model that is based on the sounds of cats and dogs. During training, the model must be able to compare the audio files that form the training data to determine how to identify a dog barking and a cat purring.
+
+Learn how to best gather and prepare data, create and deploy models, deploy and test a signal processing application, create models with binary classifications, and display the predictions on a web page created using Node-RED. 
 
 This repo is based on the IBM Early Program - Animal Sound project. [Here.](https://github.com/bedangSen/animal-sounds)
 
 ## Table of Content
 
 + [Getting Started](#getting-started)
++ [Gathering and Preparing Data](#gathering-and-preparing-data)
 + [Configuring the Application](#configuring-the-application) 
 + [Running VoiceSens locally](#running-locally)
 + [Demo Screenshots](#demo)
@@ -39,4 +42,46 @@ These instructions will get you a copy of the project up and running on your loc
     - [Sublime](https://www.sublimetext.com/)
     - [VS Code](https://code.visualstudio.com/)
 1. Create an account in [Kaggle](https:/www.kaggle.com)
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/bedangSen/Animal-Sound-Classifier-using-Watson-Studio.git  
+   ```
+
+1. Change to the new animal sounds directory:
+   ```
+   cd animal-sounds
+   ```
+
+1. Optional: If you have virtualenv, create a new environment for the application and then activate the environment.
+
+   1. Find the path by running which or where commands:
+
+      1. Windows
+         ```
+         where python
+         ```
+      1. Mac or Linux
+         ```
+         which python
+         ```
+
+   1. You can then use the path to create your virtual environment.
+      ```
+      virtualenv animals -p <path to your installed version of python> 
+      ```
+
+   1. Activate the environment:
+
+      1. Windows
+         ```
+         animals/Script/activate.bat
+         ```
+
+      1. Mac or Linux
+         ```
+         source animals/bin/activate
+         ```
+
+## Gathering and Preparing Data
 
