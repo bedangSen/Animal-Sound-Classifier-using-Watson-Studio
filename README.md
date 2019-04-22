@@ -85,3 +85,32 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Gathering and Preparing Data
 
+1. If you don’t already have an audio directory, create one for the audio files that you will download from Kaggle:
+   ```
+   mkdir audio
+   ```
+   
+1. Sign in to Kaggle [here.](https://www.kaggle.com/mmoreaux/audio-cats-and-dogs) and download the cats_dogs.zip file. 
+   
+   <p align="center">
+    <img src="https://i.imgur.com/EVPvKqd.png" align="middle">
+   </p>
+   
+1. Extract the files and copy them to the audio directory. 
+    
+1. Change to the src directory inside the animal-sounds directory:
+   ```
+   cd src
+   ```
+   
+1. Run the pip install command to install the application requirements, which are the converter and the service application that you'll use in a subsequent lab:
+   ```
+   pip install -r requirements.txt
+   ```
+   
+1. Run the converter application that finds the audio files and generates a sound.csv file in the outputs folder:
+   ```
+   python ospconverter.py
+   ```
+   
+1. 
