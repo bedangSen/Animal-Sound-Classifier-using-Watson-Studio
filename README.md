@@ -21,15 +21,6 @@ These instructions will get you a copy of the project up and running on your loc
    <p align="center">
     <img src="https://i.imgur.com/nkyKMAS.png" width="800"  align="middle">
    </p>
-  
-1. Create an instance of the Node-RED starter kit service:
-    - Go to the [Node-RED starter kit](https://cloud.ibm.com/catalog/starters/node-red-starter?bss_account=525ccc0465f143be9bcc9715846ff31f) page in the IBM Cloud Catalog.
-    - Log in to your IBM Cloud account.
-    - Click **Create**.
-    
-    <p align="center">
-    <img src="https://i.imgur.com/qRffJVH.gif" align="middle">
-   </p>
    
 1. Install and set up Python 3.
 1. Install and set up Git command line.
