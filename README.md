@@ -9,7 +9,9 @@ This repo is based on the IBM Early Program - Animal Sound project. [Here.](http
 
 + [Getting Started](#getting-started)
 + [Gathering and Preparing Data](#gathering-and-preparing-data)
-+ [Build a Machine Learning Model](#build-a-machine-learning-model) 
++ [Build a Machine Learning Model](#build-a-machine-learning-model)
++ [Create predictions in a Node-RED applicaiton ](#create-predictions-in-a-node-red-applicaiton)
++ [Conclusion](#conclusion)
 
 ## Getting Started
 
@@ -262,6 +264,45 @@ These instructions will get you a copy of the project up and running on your loc
 
    
    ### 2. Deploy and test the signal processing 
+   1. Open a terminal window and create or navigate to a directory for the application.
+   1. Navigate to animals-sounds/src directory.
+   1. Edit the ospservice.py
+      <p align="center">
+       <img src="https://i.imgur.com/SQNWkkd.png" align="middle">
+      </p>
+      
+      1. Change the host name so that it is unique in the `manifest.yaml` file.
+      1. Save your changes. 
    
+   1. Log in to the IBM Cloud CLI if you aren't already:
+      ```
+      ibmcloud login
+      ```
+      > If you are using a federated account, login using `ibmcloud login --sso`
+      
+   1. From the command line, push your application to IBM Cloud:
+      ```
+      ibmcloud push
+      ```
+      > If the ibmcloud command doesn’t work, try cf push.
+      
+      After your application is running, you can access the test web page from a web browser:
+      `https://<your-host-name>.mybluemix.net/audio`     
+      
+   1. Click either `Upload` or `Perform OSP` to select an audio file from the sounds directory in your project on your local machine.
+      1. If you see a series of numbers, your application is running, and the API is ready to use in your Node-RED flow.
    
    ### 3. Run predictions against the audio files
+   
+   1. Open your Node-RED flow
+   1. Double-click the Perform OSP HTTP Request node.
+   1. Change the URL to https://<your-host-name>.mybluemix.net/audio/nodered. Then, deploy your changes.
+   1. Use either the microphone node or the file inject node to initiate the flow. Unless you have a cat or dog around, it’s probably better to use the file inject node.
+   1. Check the output to verify the results.
+  
+  
+## Conclusion
+
+You now have an application that takes audio tracks as input and processes a signal from the audio file to obtain a series of numbers that it uses to make a machine learning-based prediction as to whether the sound is from a cat or a dog.
+
+You can expand the components that you developed in this repository to other sound-based machine learning models.
