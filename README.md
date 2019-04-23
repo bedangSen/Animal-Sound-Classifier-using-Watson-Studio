@@ -272,27 +272,44 @@ These instructions will get you a copy of the project up and running on your loc
       </p>
       
       1. Change the host name so that it is unique in the `manifest.yaml` file.
-      1. Save your changes. 
+      1. Save your changes.      
    
    1. Log in to the IBM Cloud CLI if you aren't already:
+      <p align="center">
+       <img src="https://i.imgur.com/XqRhD3g.png" align="middle">
+      </p>
+      
       ```
       ibmcloud login
       ```
       > If you are using a federated account, login using `ibmcloud login --sso`
       
    1. From the command line, push your application to IBM Cloud:
+      <p align="center">
+       <img src="https://i.imgur.com/4Ivwu2o.gif" align="middle">
+      </p>
       ```
       ibmcloud push
       ```
       > If the ibmcloud command doesn’t work, try cf push.
       
       After your application is running, you can access the test web page from a web browser:
-      `https://<your-host-name>.mybluemix.net/audio`     
+      `https://<your-host-name>.mybluemix.net/audio`  
+      <p align="center">
+       <img src="https://i.imgur.com/1PhY9SP.gif" align="middle">
+      </p>
       
    1. Click either `Upload` or `Perform OSP` to select an audio file from the sounds directory in your project on your local machine.
       1. If you see a series of numbers, your application is running, and the API is ready to use in your Node-RED flow.
+      <p align="center">
+       <img src="https://i.imgur.com/ep8imQa.png" align="middle">
+      </p>
    
    ### 3. Run predictions against the audio files
+   
+   <p align="center">
+       <img src="https://i.imgur.com/t63c0wf.gif" align="middle">
+      </p>
    
    1. Open your Node-RED flow
    1. Double-click the Perform OSP HTTP Request node.
