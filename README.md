@@ -208,35 +208,32 @@ These instructions will get you a copy of the project up and running on your loc
       </p>
    
       1. In IBM Cloud, click Catalog > Starter Kits > Node-RED Starter.
-      1. Enter an application name and domain.
-      
-      > The application name must be unique because it will be publicly addressable. Most likely the name catsdogs is already taken. The domain for this application does not need to match the domain that you used for Watson Studio.
+      1. Enter an application name and domain.      
+         > The application name must be unique because it will be publicly addressable. Most likely the name catsdogs is already taken. The domain for this application does not need to match the domain that you used for Watson Studio.
       
       1. Click `Create`. It might take some time for your instance to be created and started.
-      <p align="center">
-       <img src="https://i.imgur.com/GwfsBrs.gif" align="middle">
-      </p>
+         <p align="center">
+          <img src="https://i.imgur.com/GwfsBrs.gif" align="middle">
+         </p>
       
       1. After your instance of Node-RED is running, click `Visit App URL`.
       1. Optional: Secure your Node-RED instance with a user name and password.
       1. Click `Next` and `Next` again to complete the setup. Then, click `Go to your Node-RED flow editor`.
       
-   1. Log in in to your Node-RED instance by using the credentials that you previously specified.
-   
-   > Next, you will be importing a prebuilt flow into your Node-RED instance. This flow will allow you to upload a file and run it through the machine learning model that you created earlier.
-   
-   <p align="center">
+   1. Log in in to your Node-RED instance by using the credentials that you previously specified.   
+      > Next, you will be importing a prebuilt flow into your Node-RED instance. This flow will allow you to upload a file and run it through the machine learning model that you created earlier.
+      <p align="center">
        <img src="https://i.imgur.com/CjZh8wO.gif" align="middle">
-      </p>
+      </p>   
    
    1. Open a new tab and go to the GitHub repositoryand select the `noderedflows` folder.
       1. Select the `predictionflow.json` file.
       1. Click `Raw` and copy the file contents to your clipboard. 
-      > By clicking `Raw`, you can copy the raw data without having any unnecessary data on the clipboard that will result in errors when pasting.
+         > By clicking `Raw`, you can copy the raw data without having any unnecessary data on the clipboard that will result in errors when pasting.
       
    1. Back in your Node-RED instance, click the menu icon and click `Import > Clipboard`.
       1. Paste your clipboard contents into the field and click `Import`.
-      > You might see a number of unknown nodes that appear in the imported flow. This is because the Node-RED starter kit comes preinstalled only with certain nodes. You will install the additional nodes in the next steps.
+         > You might see a number of unknown nodes that appear in the imported flow. This is because the Node-RED starter kit comes preinstalled only with certain nodes. You will install the additional nodes in the next steps.
       
    1. Click the menu and click `Manage palette`. Then, select the `Install` tab.
       <p align="center">
@@ -247,17 +244,17 @@ These instructions will get you a copy of the project up and running on your loc
       1. Click `Install`. Then, click `Install` again to confirm the installation.
       1. Install two more nodes: `node-red-contrib-browser-utils`, which contains a microphone, and `node-red-node-base64`. The flow should now show all nodes.
    1. Click Deploy. Ignore any warnings about the new nodes. You will configure those nodes in the next few steps.
-   > Your application is now deployed and is ready for you to test. Before experimenting with an audio file, you will start with a hardcoded test to check that the prediction is working.
+      > Your application is now deployed and is ready for you to test. Before experimenting with an audio file, you will start with a hardcoded test to check that the prediction is working.
    
    1. Initiate the flow by using the blue tab on the left of the `Hard Coded Test node`.
       1. Click the `Debug` tab. Depending on your version of Node-RED, you might need to click the Debug icon to show the debug messages pane.
-      > You should see a "No Configuration Found" error message. This occurs because the Watson Machine Learning node (Run Prediction) has not been configured.
+         > You should see a "No Configuration Found" error message. This occurs because the Watson Machine Learning node (Run Prediction) has not been configured.
    
    1. Double-click the machine learning node (Run Prediction).
       1. Click the Pencil icon to edit the WML Connection configuration. Then, complete the configuration by using your machine learning credentials. The Access Key can be any non-empty value.
       1. To find your credentials, select the service from IBM Cloud and click `Credentials`. If your machine learning credentials don’t include an access key, then enter dummy text into that field. Then, click `Update` when you're done.
       1. Refetch the Model List.
-      > This will temporarily hide the mode and deployments fields because the node invokes Watson Machine Learning APIs to retrieve a revised list. After the new lists are retrieved, the fields will reappear. Depending on network latency, this might a while to complete. If the fields are not displayed, click Done, click Deploy, and open the node again.   
+         > This will temporarily hide the mode and deployments fields because the node invokes Watson Machine Learning APIs to retrieve a revised list. After the new lists are retrieved, the fields will reappear. Depending on network latency, this might a while to complete. If the fields are not displayed, click Done, click Deploy, and open the node again.   
       1. Set the mode to `Run Prediction`. Then, select your model and deployment.
       1. Click `Done` to save the configuration and deploy the updated flow.
       
