@@ -1,6 +1,6 @@
 applications:
 - path: .
-  memory: 512M
+  memory: 128M
   instances: 1
   name: your-app
   host: your-app
