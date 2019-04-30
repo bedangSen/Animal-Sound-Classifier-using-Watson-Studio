@@ -38,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Change to the new animal sounds directory:
    ```
-   cd animal-sounds
+   cd Animal-Sound-Classifier-using-Watson-Studio
    ```
 
 1. Optional: If you have virtualenv, create a new environment for the application and then activate the environment.
@@ -257,7 +257,7 @@ These instructions will get you a copy of the project up and running on your loc
    ### 2. Deploy and test the signal processing 
    1. Open a terminal window and create or navigate to a directory for the application.
    1. Navigate to animals-sounds/src directory.
-   1. Edit the ospservice.py
+   1. Edit the `manifest.yaml`
       <p align="center">
        <img src="https://i.imgur.com/SQNWkkd.png" align="middle">
       </p>
@@ -280,7 +280,7 @@ These instructions will get you a copy of the project up and running on your loc
        <img src="https://i.imgur.com/4Ivwu2o.gif" align="middle">
       </p>
       ```
-      ibmcloud push
+      ibmcloud app push
       ```
       > If the ibmcloud command doesn’t work, try cf push.
       
